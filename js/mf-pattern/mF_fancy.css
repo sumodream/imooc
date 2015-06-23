@@ -1,0 +1,199 @@
+/*=========mF_fancy ========*/
+.mF_fancy .pic
+{
+    position: absolute;
+    z-index: 1;
+}
+.mF_fancy .pic ul
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+    height: 100%;
+}
+.mF_fancy .pic ul li
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: none;
+    overflow: hidden;
+}
+.mF_fancy .txt
+{
+    position: absolute;
+    z-index: 2;
+    top: 12px;
+    left: 12px;
+
+    width: 80%;
+
+    color: #fff;
+}
+.mF_fancy .txt li
+{
+    position: absolute;
+    top: 0;
+
+    visibility: hidden;
+
+    width: 100%;
+    padding: 12px;
+
+    -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+         -o-transition: all .4s;
+
+    opacity: 0;
+}
+.mF_fancy .txt li a
+{
+    font-family: '微软雅黑';
+    font-size: 14px;
+    font-weight: bold;
+
+    display: block;
+
+    text-decoration: none;
+
+    color: #fff;
+}/*标题样式*/
+.mF_fancy .txt li p
+{
+    display: none;
+}/*隐藏详细描述文字*/
+.mF_fancy .txt li.current
+{
+    visibility: visible;
+
+    opacity: 1;
+}
+.mF_fancy .num
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 100%;
+}
+.mF_fancy .num ul
+{
+    width: 120%;
+    margin-left: -1px;
+
+    background: #666;
+}
+.mF_fancy .num ul li
+{
+    display: inline-block;
+    overflow: hidden;
+
+    height: 12px;
+
+    cursor: pointer;
+    -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+         -o-transition: all .4s;
+
+    border-left: 1px solid #ddd;
+    background: #666;
+
+}
+.mF_fancy .num ul li:hover
+{
+    background: #ddd;
+}
+.mF_fancy .num ul li.current
+{
+    cursor: default;
+
+    background: #090909;
+}
+.mF_fancy .num ul li a
+{
+    display: none;
+}
+.mF_fancy .thumb
+{
+    position: absolute;
+    z-index: 9;
+    bottom: 40px;
+    left: 0;
+
+    width: 100%;
+}
+.mF_fancy .thumb ul
+{
+    width: 120%;
+}
+.mF_fancy .thumb ul li
+{
+    position: relative;
+
+    display: inline-block!important;
+    visibility: hidden;
+
+    width: 100%;
+
+    cursor: pointer;
+
+}
+.mF_fancy .thumb ul li img
+{
+    width: 100%;
+}
+.mF_fancy .prev,
+.mF_fancy .next
+{
+    font: 700 53px/58px arial;
+
+    position: absolute;
+    z-index: 9;
+    top: 40%;
+    left: 0;
+
+    overflow: hidden;
+
+    width: 37px;
+    height: 65px;
+
+    cursor: pointer;
+}
+.mF_fancy .next
+{
+    right: 0;
+    left: auto;
+}
+.mF_fancy .prev a,
+.mF_fancy .next a
+{
+    display: block;
+    visibility: hidden;
+
+    -webkit-transition: all .4s;
+       -moz-transition: all .4s;
+         -o-transition: all .4s;
+    text-align: center;
+    text-decoration: none;
+
+    opacity: 0;
+    color: #fff;
+}
+.mF_fancy .prev a:hover,
+.mF_fancy .next a:hover
+{
+    color: #f60;
+}
+.mF_fancy .show a
+{
+    visibility: visible;
+
+    opacity: 1;
+}

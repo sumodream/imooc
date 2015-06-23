@@ -1,0 +1,595 @@
+*
+{
+    font-size: 12px;
+
+    margin: 0;
+    padding: 0;
+} /* 一般正常网站都会设置外边距、填充值 */
+
+body
+{
+    background-color: #f5f5f5;
+} /* 定义背景颜色 */
+
+.top
+{
+    width: 100%;
+    height: 27px;
+
+    background: url(../images/top_bg.jpg) repeat-x;
+} /* 定义网页头部高宽和背景  设置的图片是延X水平重复 */
+
+.top_content
+{
+    width: 1000px;
+    /*上下间距为0，左右间距自动居中*/
+    margin: 0 auto;
+} /* 定义头部内容宽度和边距 */
+
+.top_content li
+{
+    /*当想让文字在垂直方向在盒子里面居中时行高和盒子高度一样*/
+    line-height: 27px;
+
+    float: right;
+
+    width: 70px;
+
+    list-style-image: url(../images/li_bg.gif);
+} /*  定义头部内容中无序列表样式 */
+
+.top_content a:link,
+.top_content a:visited
+{
+    text-decoration: none;
+    /* a:为伪元素 */
+
+    color: #8e8e8e;
+}  /* 设置头部内容样式中鼠标经过和鼠标没有经过时的样式，且没有下划线 */
+
+.top_content a:hover,
+.top_content a:active
+{
+    text-decoration: none;
+
+    color: #900;
+}
+
+.wrap
+{
+    width: 1000px;
+    margin: 0 auto;
+}  /* 设定头部以下类块元素  包含logo、导航、焦点图片、新闻板块 */
+
+.logo
+{
+    height: 80px;
+
+    background-color: #fff;
+}  /* 设定logo 样式 */
+
+.logo_left
+{
+    display: inline;
+
+    width: 375px;
+} /* 设定logo左侧图标样式 */
+
+.logo_right
+{
+    display: inline;
+    float: right;
+
+    width: 300px;
+    height: 28px;
+    margin-top: 30px;
+
+    color: #8e8e8e;
+}  /* 设定logo右侧样式 */
+
+.logo_right img
+{
+    margin-right: 10px;
+
+    vertical-align: middle;
+} /* 设定logo样式中右侧图片样式 */
+
+.tel
+{
+    font-family: Arial;
+    font-size: 16px;
+
+    color: #c00;
+}  /* 设定logo样式中右侧电话样式 */
+
+.nav
+{
+    height: 40px;
+} /*设定导航样式  */
+
+.nav_left
+{
+    width: 10px;
+
+    background: url(../images/nav_left.jpg) no-repeat;
+}  /* 设定导航左侧样式 */
+
+.nav_mid
+{
+    line-height: 40px;
+
+    width: 980px;
+
+    background: url(../images/nav_bg.jpg) repeat-x;
+} /* 设定导航中间导航条的样式 */
+
+.nav_right
+{
+    width: 10px;
+
+    background: url(../images/nav_right.jpg) no-repeat;
+}  /* 设定导航右侧样式 */
+
+.nav_left,
+.nav_mid,
+.nav_right
+{
+    display: inline;
+    float: left;
+
+    height: 40px;
+}  /* 可如此同时给几个类设定样式 */
+
+.nav_mid_left,
+.nav_mid_right
+{
+    float: left;
+}  /* 同时给导航条左右侧设定样式 */
+
+.nav_mid_left
+{
+    width: 680px;
+}  /* 设定导航条左侧样式 */
+
+.nav_mid_right
+{
+    width: 300px;
+}  /* 设定导航条右侧样式 */
+
+.nav_mid_left li
+{
+    line-height: 40px;
+
+    float: left;
+
+    width: 100px;
+
+    list-style-type: none;
+
+    text-align: center;
+}  /* 设定导航条文本样式 */
+
+.nav_mid_left a:link,
+.nav_mid_left a:visited
+{
+    font-family: Arial;
+    font-size: 16px;
+
+    text-decoration: none;
+
+    color: #fff;
+} /* 设定导航条鼠标经过和鼠标没有经过时的状态 */
+
+.nav_mid_left a:hover,
+.nav_mid_left a:active
+{
+    font-family: Arial;
+    font-size: 16px;
+
+    text-decoration: none;
+
+    color: #ff0;
+}
+
+.search_text
+{
+    width: 190px;
+    height: 25px;
+    margin-top: 5px;
+    padding-right: 25px;
+
+    border: 1px solid #fff;
+    background: url(../images/search.jpg) no-repeat right center;
+    background-color: #fff;
+} /* 设定导航条右侧搜索框的样式 */
+
+.ad
+{
+    overflow: hidden;
+
+    height: 310px;
+} /* 设定焦点图片样式 */
+
+.main
+{
+    height: 260px;
+    margin-top: 5px;
+
+    background-color: #fff;
+} /* 设定新闻主体样式 */
+
+.news
+{
+    width: 340px;
+
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+} /* 设定主体中新闻样式 */
+
+.course
+{
+    width: 410px;
+    margin: 0 7px;
+
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+} /* 设定主体中课程样式 */
+
+.sidebar
+{
+    width: 230px;
+    height: 250px;
+
+    background-color: #fff;
+}  /* 设定主体中侧边栏样式*/
+
+.news,
+.course,
+.sidebar
+{
+    float: left;
+
+    height: 250px;
+}
+
+.title
+{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 35px;
+
+    height: 35px;
+
+    color: #786f66;
+    border-bottom: 2px solid #e8e8e8;
+} /* 设定title样式 */
+
+.title_left
+{
+    line-height: 35px;
+
+    float: left;
+
+    width: 70%;
+    padding-left: 16px;
+} /* 设定title左侧样式 */
+
+.title_right
+{
+    line-height: 35px;
+
+    float: right;
+
+    width: 20%;
+    padding-right: 5px;
+
+    text-align: right;
+} /* 设定title右侧样式*/
+
+.title_right a
+{
+    font-family: Arial;
+    font-size: 10px;
+    font-weight: normal;
+
+    padding-right: 10px;
+
+    text-decoration: none;
+
+    color: #999;
+} /* 设定title右侧超链接样式 */
+
+.pic_news
+{
+    line-height: 22px;
+
+    height: 80px;
+    margin-top: 10px;
+} /* 设定新闻样式*/
+
+.pic_news img,
+.course_pic img
+{
+    float: left;
+
+    margin: 0 5px;
+} /* 设定新闻图片样式*/
+
+.pic_news a,
+.course_pic a
+{
+    text-decoration: none;
+
+    color: #c00;
+} /* 设定新闻超链接样式*/
+
+.news_list
+{
+    margin-top: 20px;
+}/* 设定新闻list样式*/
+
+.news_list li
+{
+    line-height: 17px;
+
+    height: 17px;
+    margin: 8px;
+    padding-left: 10px;
+
+    list-style-type: none;
+
+    border-bottom: 1px dotted #ccc;
+    background: url(../images/list.jpg) no-repeat;
+} /* 设定新闻list内容样式*/
+
+.news_list span
+{
+    float: right;
+
+    color: #999;
+}
+
+.news_list a:link,
+.news_list a:visited
+{
+    text-decoration: none;
+
+    color: #000;
+}/* 设定新闻list鼠标经过和鼠标没有经过的样式*/
+
+.news_list a:hover,
+.news_list a:active
+{
+    text-decoration: none;
+
+    color: #f00;
+}
+
+.course_pic
+{
+    line-height: 22px;
+
+    height: 120px;
+    margin-top: 10px;
+} /* 设定课程样式*/
+
+.course_tpye
+{
+    width: 372px;
+    height: 37px;
+    margin: 20px auto;
+
+    background: url(../images/product_type_bg.jpg) no-repeat;
+} /* 设定课程类型样式*/
+
+.course_tpye li
+{
+    line-height: 37px;
+
+    float: left;
+
+    margin: 0 15px;
+
+    list-style-type: none;
+
+    text-align: center;
+} /* 设定课程类型内容样式*/
+
+.video
+{
+    height: 185px;
+
+    border: 1px solid #e8e8e8;
+}/* 设定视频样式*/
+
+.video_content
+{
+    height: 150px;
+
+    text-align: center;
+} /* 设定视频内容样式*/
+
+.sidebar_ad
+{
+    height: 55px;
+    margin-top: 10px;
+
+    border: 1px solid #e8e8e8;
+} /* 设定侧边栏样式*/
+
+.copyright
+{
+    clear: both;
+
+    width: 100%;
+    height: 200px;
+    margin-top: 10px;
+
+    background-color: #e8e8e8;
+} /* 设定版权样式*/
+
+.copyright_content
+{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+} /* 设定版权主体样式*/
+
+.copyright_content li 
+{
+    font-family: Arial;
+    line-height: 30px;
+
+    float: left;
+
+    width: 200px;
+
+    list-style-type: none;
+
+    text-align: center;
+
+    background: url(..images/line.png) no-repeat right center;
+} /* 设定版权内容样式*/
+
+.copyright_content a
+{
+    font-size: 18px;
+
+    text-decoration: none;
+
+    color: #999;
+} /* 设定版权超链接样式*/
+
+.copyright_content li ul li a
+{
+    font-size: 14px;
+} /* 设定版权下层文本样式*/
+
+.list_main
+{
+    min-height: 350px;
+    margin-top: 10px;
+
+    background-color: #fff;
+
+    _height: 350px;
+} /* 设定list主体样式*/
+
+.news_type
+{
+    float: left;
+
+    width: 220px;
+    height: 350px;
+
+    border: 1px solid #e8e8e8;
+} /* 设定新闻类型样式*/
+
+.list_box
+{
+    float: right;
+
+    width: 770px;
+    min-height: 350px;
+
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+ 
+
+    _height: 350px;/*专门为IE6设定，自动把盒子撑开*/
+} /* 设定list盒子样式*/
+
+.news_type h2
+{
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 35px;
+
+    height: 35px;
+
+    color: #666;
+    background: url(../images/title_bg.gif) repeat-x;
+    padding-left: 20px;
+} /* 设定新闻左边栏文本样式*/
+
+.news_type_content{
+    height: 65px;
+    background: url(../images/content_bg.gif) repeat-x;
+}
+
+.news_type_content li{
+    list-style-type: none;
+    height: 30px;
+    line-height: 30px;
+}
+
+.news_type_content li a{
+    color: #666;
+    text-decoration: none;
+    background: url(../images/li_bg.gif) no-repeat left center;
+    padding-left: 15px;
+    display: block;
+
+}
+
+.news_type_content li a:hover{
+    color: #009cdf;
+    background: url(../images/li_bg2.gif) no-repeat left center;
+    background-color: #f2f2f2;
+}
+
+.list_box h2{
+    font-family: Arial;
+    font-size: 14px;
+    color: #666;
+    height:35px;
+    line-height: 35px;
+    background:url(../images/type_bg.png) repeat-x;
+    padding-left: 20px;
+}
+
+.page{
+    height: 40px;
+    margin-top: 10px;
+    text-align: center;
+}
+.page a{
+    border: 1px solid #e8e8e8;
+    text-decoration: none;
+    margin: 5px;
+    padding: 5px 10px;
+    display: inline-block;/* 浏览器兼容问题解决方案*/
+}
+
+.page a:link,.page a:visited{
+    color: #FC4F03;
+}
+.page a:hover,.page a:active{
+    color: #000;
+    background-color:#cc1b1b; 
+}
+
+.newsBox {
+    width: 770px;
+    min-height: 300px;
+    _height: 300px;
+    margin:0 auto;
+}
+.newsTitle {
+    font-size: 20px;
+    font-family:Arial;
+    text-align: center;
+    margin: 10px 0;
+}
+.newsInfo {
+    color: #666;
+    text-align: center;
+    border-bottom: 1px dotted #666;
+}
+.newsContent {
+    font-size: 14px;
+    line-height: 25px;
+    padding: 20px;
+    text-indent: 2em;/*首行缩进*/
+}
